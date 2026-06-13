@@ -94,8 +94,8 @@ The policy is based on [SmolVLA](https://huggingface.co/lerobot/smolvla_base), a
 | **Policy** | [LuxFeroRN/kitchen_smolvla_policy2](https://huggingface.co/LuxFeroRN/kitchen_smolvla_policy2) |
 | **Base model** | `lerobot/smolvla_base` |
 | **Training steps** | 100,000 |
-| **Batch size** | 32 |
-| **Hardware** | NVIDIA RTX A4000 (16 GB VRAM) |
+| **Batch size** | 8 |
+| **Hardware** | NVIDIA RTX A6000 (48 GB VRAM) |
 
 ---
 
@@ -172,7 +172,7 @@ huggingface-cli login
 ### 1. Test the camera
 
 ```bash
-python3 open_camera.py
+python3 scripts/open_camera.py
 ```
 
 ### 2. Collect demonstration data
@@ -325,23 +325,15 @@ Policy performance was evaluated across 5 runs (data1–data5) totalling 111 epi
 
 ### Salchicha (Sausage)
 
-https://github.com/user-attachments/assets/placeholder-salchicha
-
-> File: [videos/salchicha1.mp4](videos/salchicha1.mp4)
+<video src="videos/salchicha1.mp4" controls width="600"></video>
 
 ### Lechuga (Lettuce)
 
-https://github.com/user-attachments/assets/placeholder-lechuga
-
-> File: [videos/lechuga2.mp4](videos/lechuga2.mp4)
+<video src="videos/lechuga2.mp4" controls width="600"></video>
 
 ### Papa (Potato)
 
-https://github.com/user-attachments/assets/placeholder-papa
-
-> File: [videos/papa1.mp4](videos/papa1.mp4)
-
-> **Note:** Upload the videos directly to the GitHub repository and replace the placeholder URLs above with the auto-generated asset links.
+<video src="videos/papa1.mp4" controls width="600"></video>
 
 ---
 
@@ -368,7 +360,12 @@ https://github.com/user-attachments/assets/placeholder-papa
 ```
 vla-manipulation-so101/
 │
-├── runs/                          # Evaluation run data and analysis
+├── lerobot/                       # from lerobot repository with slight modifications
+│
+├── presentacion/  
+│   ├── Presentación-so101.pdf     # In class presentation
+│
+├── runs/                          # Evaluation runs data and analysis
 │   ├── plots/                     # Trajectory plots per run
 │   │   ├── data1_trajectories.png
 │   │   ├── data2_trajectories.png
@@ -380,17 +377,18 @@ vla-manipulation-so101/
 │   ├── data3.rrd                  # Raw Rerun recording — run 3
 │   ├── data4.rrd                  # Raw Rerun recording — run 4
 │   ├── data5.rrd                  # Raw Rerun recording — run 5
-│   ├── runs_analysis.md           # Detailed metrics and analysis
-│   ├── interpret.py               # Metrics computation script
+│   └── runs_analysis.md           # Detailed metrics and analysis
+│
+├── scripts/                       # Utility scripts
+│   ├── interpret.py               # Metrics computation from .rrd files
 │   ├── plot_runs.py               # Trajectory plotting script
-│   └── video_from_rrd.py         # Video extraction from .rrd files
+│   └── open_camera.py             # Camera connection and test script
 │
 ├── videos/                        # Evaluation demo videos
 │   ├── salchicha1.mp4
 │   ├── lechuga2.mp4
 │   └── papa1.mp4
 │
-├── open_camera.py                 # Camera connection and test script
 └── README.md
 ```
 
@@ -409,11 +407,16 @@ vla-manipulation-so101/
 
 | Member | Contribution |
 |--------|-------------|
-| [Member 1] | — |
-| [Member 2] | — |
-| [Member 3] | — |
-| [Member 4] | — |
-| [Member 5] | — |
-| [Member 6] | — |
-| [Member 7] | — |
-| [Member 8] | — |
+| [Gerardo Fregoso Jimenez] | — |
+| [Luis Fernando Ruiz Neria ] | — |
+| [Jose Raul Arredondo Lopez] | — |
+| [Daniel Eduardo Hinojosa Alvarado] | — |
+| [Josue Ureña Valencia] | — |
+| [César Arellano Arellano] | — |
+| [José Eduardo Sánchez Martinez] | — |
+| [Rafael André Gamiz Salazar] | — |
+
+---
+
+## Note
+Due to GitHub's file size limitations it is necessary to download the dataset and policy from the HuggingFace hub, both links are provided in the External Resources section.
