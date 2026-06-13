@@ -325,15 +325,15 @@ Policy performance was evaluated across 5 runs (data1–data5) totalling 111 epi
 
 ### Salchicha (Sausage)
 
-<video src="videos/salchicha1.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/2f0ee7a1-1200-4e0c-b53e-f2269cfc3182
 
 ### Lechuga (Lettuce)
 
-<video src="videos/lechuga2.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/520cf501-2c88-4714-91dc-464e8238aefa
 
 ### Papa (Potato)
 
-<video src="videos/papa1.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/c225bdb7-ff1b-4af4-a6d7-f8f1a8f3f05e
 
 ---
 
@@ -407,14 +407,14 @@ vla-manipulation-so101/
 
 | Member | Contribution |
 |--------|-------------|
-| [Gerardo Fregoso Jimenez] | — |
-| [Luis Fernando Ruiz Neria ] | — |
-| [Jose Raul Arredondo Lopez] | — |
-| [Daniel Eduardo Hinojosa Alvarado] | — |
-| [Josue Ureña Valencia] | — |
-| [César Arellano Arellano] | — |
-| [José Eduardo Sánchez Martinez] | — |
-| [Rafael André Gamiz Salazar] | — |
+| [Gerardo Fregoso Jimenez] |Task design, Stage building, Provided training server|
+| [Luis Fernando Ruiz Neria ] |Repository elaboration, Data capture, Model training|
+| [Jose Raul Arredondo Lopez] |Leader arm building, Stage building, Teleoperation testing|
+| [Daniel Eduardo Hinojosa Alvarado] |Investigation, Model testing, Metrics evaluation|
+| [Josue Ureña Valencia] |Follower arm building, Teleoperation testing, Presentation elaboration|
+| [César Arellano Arellano] |Investigation, Data capture, Presentation elaboration|
+| [José Eduardo Sánchez Martinez] |Follower arm building, Task design, Investigation|
+| [Rafael André Gamiz Salazar] |Stage Building, Data capture, Presentation elaboration|
 
 ---
 
