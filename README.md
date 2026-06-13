@@ -241,7 +241,7 @@ Policy performance was evaluated across 5 runs (data1–data5) totalling 111 epi
 | data2 | 39 | 3.78 | 1.37 | 5.58 | 27.9 |
 | data3 | 7  | 3.34 | 1.16 | 5.54 | 29.0 |
 | data4 | 35 | 2.90 | 1.26 | 5.60 | 28.5 |
-| **data5** | **13** | **1.99** | **0.80** | **1.50** | 29.9 |
+| **data5** | **13** | **1.99** | **0.80** | **5.50** | 29.9 |
 
 > MAE mean and smoothness std are averaged across all 6 joints.
 
